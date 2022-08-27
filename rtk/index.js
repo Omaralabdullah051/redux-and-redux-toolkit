@@ -9,11 +9,11 @@ const { increment: dynamicIncrement, decrement: dynamicDecrement } =
   dynamicCounterActions;
 
 // initial state
-console.log(`Initial State: ${JSON.stringify(store.getState())}`);
+// console.log(`Initial State: ${JSON.stringify(store.getState())}`);
 
 // subscribe to state changes
 store.subscribe(() => {
-  console.log(store.getState());
+  // console.log(store.getState());
 });
 
 // disptach actions
