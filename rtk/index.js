@@ -3,6 +3,7 @@ const { counterActions } = require("./features/counter/counterSlice");
 const {
   dynamicCounterActions,
 } = require("./features/dynamicCounter/dynamicCounterSlice");
+const { fetchPosts } = require("./features/post/postSlice");
 
 const { increment, decrement } = counterActions;
 const { increment: dynamicIncrement, decrement: dynamicDecrement } =
@@ -28,3 +29,5 @@ store.dispatch(dynamicIncrement(5));
 store.dispatch(dynamicIncrement(4));
 
 store.dispatch(dynamicDecrement(2));
+
+store.dispatch(fetchPosts());
